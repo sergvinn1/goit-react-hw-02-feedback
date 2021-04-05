@@ -1,0 +1,23 @@
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 218, 218, 0.6);
+  text-decoration: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #770007;
+  cursor: pointer;
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.button:hover {
+  color: #f2e7ce;
+  background-color: rgb(158, 46, 46);
+}

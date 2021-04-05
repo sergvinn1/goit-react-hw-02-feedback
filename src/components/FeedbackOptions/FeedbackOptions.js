@@ -1,6 +1,7 @@
 import React from 'react';
 import shortid from 'shortid';
 import PropTypes from 'prop-types';
+import s from './FeedbackOptions.module.scss';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
@@ -8,6 +9,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       {options.map(option => (
         <button
           key={shortid.generate()}
+          className={s.button}
           type="button"
           name={option}
           onClick={onLeaveFeedback}
